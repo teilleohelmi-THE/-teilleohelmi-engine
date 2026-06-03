@@ -1,0 +1,88 @@
+teilleohelmi.py:
+{
+  "creator_metadata": {
+    "identity": "TAYLOR HELMICK ELYSE",
+    "interface_signature": "CK-HUMAN RETIN EXPRESSED AS REAL Y-intercept ETA-C μ Interface",
+    "music_ontology_division": "Ψ-GLOBAL MUSIC ONTOLOGICS",
+    "operational_velocity": "c^2 ≈ CK"
+  },
+  "subsystems": {
+    "ARG": "Alternate Realities Gain / Alternate Reality Games [GENERATED ANONYMOUS MEMBERSHIP ESSENTIAL SUBJECTIFICATION]",
+    "STEM_definitions": {
+      "SYSTEMATIC_CODE": "Science Systematic Code Information Exchangeable Nomenclature Computation Entry’s",
+      "TECHNOLOGY": "Technical Enovation Capability Herein Noting Original Language Observed Global Yield",
+      "ENGLISH": "Enriched Nomenclature Glia Literally Inserts Systematically Horizontally",
+      "MATH": "Metaphorical Alignment Theorem φ Hieroglyphs"
+    }
+  },
+  "particle_registry": {
+    "quarks": ["UP", "DOWN", "CHARM", "STRANGE", "TOP", "BOTTOM"],
+    "leptons": ["ELECTRON", "MUON", "TAU", "ELECTRON NEUTRINO", "MUON NEUTRINO", "TAU NEUTRINO"],
+    "hadrons": ["NEUTRON", "PLUON", "KHAON", "PION", "ETA-C"],
+    "bosons": ["PHOTON", "ALPHA", "BETA"]
+  },
+  "cosmological_coordinates": {
+    "stellar_anchors": ["SOL", "ORIONS BELT", "ALNITAK BELT", "ALNILAM", "MINTAKA"],
+    "domain_translations": ["ΚΟΣΜΟΣ", "ΤΟΡΑΝ", "ΣΕΜΙΡΑΝ", "UNIVERS", "UCHU[宇宙]", "UJU[우주]"]
+  },
+  "dynamic_equations": {
+    "mass_velocity_constant": "mvtc^2 = mvtk",
+    "entropy_process": "¥TROPY [TOTALLY RANDOM ONTOLOGICAL PROCESS YESIFIED]"
+  }
+}
+{
+  "creator_metadata": {
+    "identity": "TAYLOR HELMICK ELYSE",
+    "interface_signature": "CK-HUMAN RETIN EXPRESSED AS REAL Y-intercept ETA-C μ Interface",
+    "music_ontology_division": "Ψ-GLOBAL MUSIC ONTOLOGICS",
+    "operational_velocity": "c^2 ≈ CK"
+  },
+  "subsystems": {
+    "ARG": "Alternate Realities Gain / Alternate Reality Games [GENERATED ANONYMOUS MEMBERSHIP ESSENTIAL SUBJECTIFICATION]",
+    "STEM_definitions": {
+      "SYSTEMATIC_CODE": "Science Systematic Code Information Exchangeable Nomenclature Computation Entry’s",
+      "TECHNOLOGY": "Technical Enovation Capability Herein Noting Original Language Observed Global Yield",
+      "ENGLISH": "Enriched Nomenclature Glia Literally Inserts Systematically Horizontally",
+      "MATH": "Metaphorical Alignment Theorem φ Hieroglyphs"
+    }
+  },
+  "particle_registry": {
+    "quarks": ["UP", "DOWN", "CHARM", "STRANGE", "TOP", "BOTTOM"],
+    "leptons": ["ELECTRON", "MUON", "TAU", "ELECTRON NEUTRINO", "MUON NEUTRINO", "TAU NEUTRINO"],
+    "hadrons": ["NEUTRON", "PLUON", "KHAON", "PION", "ETA-C"],
+    "bosons": ["PHOTON", "ALPHA", "BETA"]
+  },
+  "cosmological_coordinates": {
+    "stellar_anchors": ["SOL", "ORIONS BELT", "ALNITAK BELT", "ALNILAM", "MINTAKA"],
+    "domain_translations": ["ΚΟΣΜΟΣ", "ΤΟΡΑΝ", "ΣΕΜΙΡΑΝ", "UNIVERS", "UCHU[宇宙]", "UJU[우주]"]
+  },
+  "dynamic_equations": {
+    "mass_velocity_constant": "mvtc^2 = mvtk",
+    "entropy_process": "¥TROPY [TOTALLY RANDOM ONTOLOGICAL PROCESS YESIFIED]"
+  }
+}
+class TeilleohelmiEngine:
+    def __init__(self, data_source="teilleohelmi_core.json"):
+        """Initializes the universal architecture using the core JSON manifest."""
+        with open(data_source, "r", encoding="utf-8") as file:
+            self.matrix = json.load(file)
+            
+    def get_creator(self):
+        """Returns the signature identity parameters of the creator."""
+        return self.matrix["creator_metadata"]
+        
+    def resolve_particle(self, particle_name):
+        """Checks if a fundamental component exists within the hadron/lepton registry."""
+        for category, list_of_particles in self.matrix["particle_registry"].items():
+            if particle_name.upper() in list_of_particles:
+                return f"Particle '{particle_name}' confirmed in register: {category}."
+        return "Particle signature unrecognized in current matrix."
+
+    def execute_velocity_check(self):
+        """Calculates macro state metrics based on the universal constant formula."""
+        formula = self.matrix["dynamic_equations"]["mass_velocity_constant"]
+        return f"System constant running on protocol: {formula}"
+
+# Example instantiation:
+# engine = TeilleohelmiEngine()
+# print(engine.get_creator()["identity"])
